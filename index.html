@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Frontend Mentor | Expenses chart component</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .attribution {
+                position: absolute;
+                bottom: 0;
+                font-family: "DM Sans", sans-serif;
+
+                font-size: 11px;
+                text-align: center;
+                color: hsl(25, 47%, 15%);
+            }
+            .attribution a {
+                text-decoration: none;
+                color: hsl(25, 47%, 15%);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>My balance</h2>
+            <span>$921.48</span>
+            <img src="/images/logo.svg" alt="logo" />
+        </header>
+        <main>
+            <h1>Spending - Last 7 days</h1>
+            <section class="spendings">
+                <div class="boxes">
+                    <div class="box current-day" id="mon">
+                        <!-- <div class="detail">$17.45</div> -->
+                    </div>
+                    <div class="box" id="tue"></div>
+                    <div class="box" id="wed"></div>
+                    <div class="box" id="thu"></div>
+                    <div class="box" id="fri"></div>
+                    <div class="box" id="sat"></div>
+                    <div class="box" id="sun"></div>
+                </div>
+                <div class="desc">
+                    <span>mon</span>
+                    <span>tue</span>
+                    <span>wed</span>
+                    <span>thu</span>
+                    <span>fri</span>
+                    <span>sat</span>
+                    <span>sun</span>
+                </div>
+            </section>
+            <div class="h_line"></div>
+            <section class="footer">
+                <h3>Total this month</h3>
+                <div id="total">$478.33</div>
+                <strong>+2.4%</strong>
+                <div id="last">from last month</div>
+            </section>
+        </main>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="hhttps://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.frontendmentor.io/profile/fifowskaw">Ilsaya</a
+            >.
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
